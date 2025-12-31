@@ -1,0 +1,275 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* =========================
+   GLOBAL LANDING STYLES
+========================= */
+.landing-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e6fa, #c6d2ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #2b2b2b;
+  overflow-x: hidden;
+  animation: fadeInPage 1.2s ease-in;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   HERO / WELCOME SECTION
+========================= */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 120px 50px;
+  background: linear-gradient(135deg, #6f86dd, #4f5fd8);
+  border-radius: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  overflow: visible;
+  color: white;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.get-started-btn {
+  padding: 18px 45px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 35px;
+  background-color: #ffffff;
+  color: #4f5fd8;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #e0e0ff;
+  transform: translateY(-3px) scale(1.02);
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.hero-image img {
+  max-width: 550px;
+  transform: rotate(-5deg) translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+  border-radius: 25px;
+  transition: transform 0.5s ease;
+  animation: float 4s ease-in-out infinite;
+}
+
+.hero-image img:hover {
+  transform: rotate(0deg) translateY(-5px) scale(1.05);
+}
+
+/* =========================
+   LANDING CONTENT (OTHER SECTIONS)
+========================= */
+.landing-content {
+  text-align: center;
+  padding: 120px 20px 80px;
+  animation: slideUp 1.3s ease;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #3a3a8a;
+}
+
+.landing-content p {
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* =========================
+   IMAGE SHOWCASE SECTION
+========================= */
+.landing-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 60px 8%;
+  background-color: #fff6e5;
+}
+
+.landing-image-card {
+  height: 220px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease;
+}
+
+.landing-image-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+/* =========================
+   IMAGE BACKGROUNDS
+========================= */
+.image1 { background-image: url("../Assets/image1.webp"); }
+.image2 { background-image: url("../Assets/image2.avif"); }
+.image3 { background-image: url("../Assets/image3.jpg"); }
+.image4 { background-image: url("../Assets/stem.jpg"); }
+
+/* =========================
+   FOOTER
+========================= */
+.landing-footer {
+  background-color: #fffdec;
+  padding: 25px 20px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.landing-footer p {
+  margin: 6px 0;
+  color: #083b3b;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeInPage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% { transform: rotate(-5deg) translateY(-10px); }
+  50% { transform: rotate(-3deg) translateY(-15px); }
+  100% { transform: rotate(-5deg) translateY(-10px); }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  .hero-text p {
+    font-size: 1.3rem;
+  }
+  .hero-image img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+  .hero-image img {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+/* =========================
+   HERO IMAGE POP-UP CARD
+========================= */
+.hero-image-card {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  transform: translateY(-20px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image-card img {
+  max-width: 100%;
+  border-radius: 15px;
+  display: block;
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+.hero-image-card:hover {
+  transform: translateY(-30px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+}
+
+/* Floating animation for card */
+@keyframes floatCard {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+.yellow-section {
+  width: 100%;
+  height: 250px; 
+  background-color: #fff9c4; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
