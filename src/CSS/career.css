@@ -1,0 +1,180 @@
+/* =========================
+   Career Page Styles - Professional White & Blue
+========================= */
+.career-page {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa; /* soft light background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.career-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  display: flex;
+  overflow: hidden;
+  max-width: 1100px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Left Form Section */
+.career-form-section {
+  flex: 1;
+  padding: 50px 40px;
+  background: #ffffff;
+}
+
+.career-form-section h2 {
+  color: #1a3e7a; /* professional blue */
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.career-form-section p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.career-form .form-group {
+  margin-bottom: 20px;
+}
+
+.career-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.career-form input,
+.career-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: #fdfdfd;
+}
+
+.career-form input:focus,
+.career-form textarea:focus {
+  border-color: #1a3e7a;
+  box-shadow: 0 0 8px rgba(26,62,122,0.2);
+  outline: none;
+}
+
+.submit-btn {
+  background: #1a3e7a;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0f2a55;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Right Info Section */
+.career-info-section {
+  flex: 1;
+  padding: 50px 40px;
+  background: #f0f4ff; /* soft blue background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.career-info-section h1 {
+  font-size: 40px;
+  color: #1a3e7a;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.career-info-section h3 {
+  font-size: 24px;
+  color: #2c4b90;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.career-info-section p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  font-size: 16px;
+  color: #1a3e7a;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border-left: 4px solid #1a3e7a;
+  background: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.benefits-list li:hover {
+  background: #e6ebff;
+  transform: translateX(5px);
+}
+
+/* =========================
+   Animations
+========================= */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideInLeft {
+  0% {opacity: 0; transform: translateX(-30px);}
+  100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeInUp {
+  0% {opacity: 0; transform: translateY(15px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 992px) {
+  .career-container {
+    flex-direction: column;
+  }
+
+  .career-form-section, .career-info-section {
+    padding: 30px;
+  }
+
+  .career-info-section h1 {
+    font-size: 32px;
+  }
+
+  .career-info-section h3 {
+    font-size: 20px;
+  }
+}

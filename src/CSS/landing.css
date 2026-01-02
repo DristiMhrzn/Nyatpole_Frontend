@@ -134,7 +134,7 @@
 }
 
 .landing-image-card {
-  height: 220px;
+  height: 350px;
   border-radius: 20px;
   background-size: cover;
   background-position: center;
@@ -265,10 +265,10 @@
 }
 
 
-.yellow-section {
+.blank{
   width: 100%;
-  height: 250px; 
-  background-color: #fff9c4; 
+  height: 200px; 
+  background-color: #cdd7fb; 
   display: flex;
   justify-content: center;
   align-items: center;

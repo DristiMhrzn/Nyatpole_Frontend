@@ -28,7 +28,7 @@ const Landing = () => {
         <div className="landing-image-card image4"></div>
       </div>
 
-      <div className="yellow-section">
+      <div className="blank">
 </div>
 
       {/* FOOTER */}
