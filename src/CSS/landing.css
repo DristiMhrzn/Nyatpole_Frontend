@@ -1,11 +1,11 @@
-/* =========================
+/* 
    GOOGLE FONT
-========================= */
+*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* =========================
+/*
    GLOBAL LANDING STYLES
-========================= */
+ */
 .landing-container {
   min-height: 100vh;
   background: linear-gradient(135deg, #e0e6fa, #c6d2ff);
@@ -19,9 +19,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* =========================
+/*
    HERO / WELCOME SECTION
-========================= */
+*/
 .hero-section {
   display: flex;
   align-items: center;
@@ -98,9 +98,9 @@
   transform: rotate(0deg) translateY(-5px) scale(1.05);
 }
 
-/* =========================
-   LANDING CONTENT (OTHER SECTIONS)
-========================= */
+/*
+   LANDING CONTENT 
+*/
 .landing-content {
   text-align: center;
   padding: 120px 20px 80px;
@@ -122,9 +122,9 @@
   color: #444;
 }
 
-/* =========================
+/* 
    IMAGE SHOWCASE SECTION
-========================= */
+ */
 .landing-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -146,17 +146,17 @@
   transform: translateY(-10px) scale(1.05);
 }
 
-/* =========================
+/*
    IMAGE BACKGROUNDS
-========================= */
+*/
 .image1 { background-image: url("../Assets/image1.webp"); }
 .image2 { background-image: url("../Assets/image2.avif"); }
 .image3 { background-image: url("../Assets/image3.jpg"); }
 .image4 { background-image: url("../Assets/stem.jpg"); }
 
-/* =========================
+/* 
    FOOTER
-========================= */
+ */
 .landing-footer {
   background-color: #fffdec;
   padding: 25px 20px;
@@ -227,9 +227,9 @@
   }
 }
 
-/* =========================
+/* 
    HERO IMAGE POP-UP CARD
-========================= */
+*/
 .hero-image-card {
   flex: 1;
   min-width: 300px;

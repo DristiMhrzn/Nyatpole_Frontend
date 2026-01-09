@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/career.css";
 
 const Career = () => {
+  const [cvFile, setCvFile] = useState(null);
+
+  const handleFileChange = (e) => {
+    setCvFile(e.target.files[0]);
+  };
+
+  const clearFile = () => {
+    setCvFile(null);
+    document.getElementById("cv").value = null; // reset the input
+  };
+
   return (
     <div className="career-page">
       <div className="career-container">
@@ -23,9 +34,30 @@ const Career = () => {
               <input type="tel" id="contact" placeholder="Enter your contact number" />
             </div>
             <div className="form-group">
-              <label htmlFor="reason">Why do you want to join our team?</label>
+              <label htmlFor="reason">Why do you want to join our team? *</label>
               <textarea id="reason" placeholder="Tell us why..." rows="4"></textarea>
             </div>
+
+            {/* CV Upload Section */}
+            <div className="form-group cv-upload">
+              <label htmlFor="cv">Upload Your CV</label>
+              <input
+                type="file"
+                id="cv"
+                accept=".pdf,.doc,.docx"
+                onChange={handleFileChange}
+              />
+              {cvFile && (
+                <div className="file-info">
+                  <span>{cvFile.name}</span>
+                  <button type="button" className="clear-btn" onClick={clearFile}>
+                    ×
+                  </button>
+                </div>
+              )}
+              <small>Accepted formats: PDF, DOC, DOCX</small>
+            </div>
+
             <button type="submit" className="submit-btn">Submit Application</button>
           </form>
         </div>

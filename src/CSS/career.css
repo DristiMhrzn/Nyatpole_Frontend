@@ -1,9 +1,7 @@
-/* =========================
-   Career Page Styles - Professional White & Blue
-========================= */
+
 .career-page {
   font-family: 'Poppins', sans-serif;
-  background: #f5f7fa; /* soft light background */
+  background: #f5f7fa; 
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -30,7 +28,7 @@
 }
 
 .career-form-section h2 {
-  color: #1a3e7a; /* professional blue */
+  color: #1a3e7a; 
   font-size: 34px;
   margin-bottom: 10px;
 }
@@ -92,7 +90,7 @@
 .career-info-section {
   flex: 1;
   padding: 50px 40px;
-  background: #f0f4ff; /* soft blue background */
+  background: #f0f4ff; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,9 +138,9 @@
   transform: translateX(5px);
 }
 
-/* =========================
+/*
    Animations
-========================= */
+*/
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -158,9 +156,9 @@
   100% {opacity: 1; transform: translateY(0);}
 }
 
-/* =========================
+/* 
    Responsive
-========================= */
+*/
 @media (max-width: 992px) {
   .career-container {
     flex-direction: column;
@@ -177,4 +175,56 @@
   .career-info-section h3 {
     font-size: 20px;
   }
+}
+
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.form-group small {
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 3px;
+}
+
+
+/* File name display with clear button */
+.file-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e6f0ff;
+  padding: 6px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #1f3c88;
+}
+
+.clear-btn {
+  background: #ff4d4f;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.clear-btn:hover {
+  background: #e33b3b;
+}
+
+.cv-upload small {
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 3px;
 }

@@ -1,6 +1,6 @@
-/* =========================
+/*
    GLOBAL STYLES
-========================= */
+ */
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +13,9 @@
   color: #2e2e38;
 }
 
-/* =========================
+/* 
    HERO SECTION
-========================= */
+ */
 .about-hero {
   height: 55vh;
   background: linear-gradient(135deg, #728be8, #8b98ee, #5768ed);
@@ -40,9 +40,9 @@
   opacity: 0.9;
 }
 
-/* =========================
+/* 
    ABOUT CONTENT
-========================= */
+*/
 .about-content {
   padding: 90px 10%;
   display: grid;
@@ -73,9 +73,7 @@
   animation: bounce 4s ease-in-out infinite;
 }
 
-/* =========================
-   GALLERY SECTION (FADE STYLE)
-========================= */
+
 .gallery-section {
   padding: 100px 8%;
   text-align: center;
@@ -102,14 +100,12 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Fade Container */
 .gallery-slider {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-/* Images stacked */
 .gallery-slider img {
   position: absolute;
   inset: 0;
@@ -120,25 +116,25 @@
   animation: fadeGallery 15s infinite;
 }
 
-/* Delays for each image */
+
 .gallery-slider img:nth-child(1) { animation-delay: 0s; }
 .gallery-slider img:nth-child(2) { animation-delay: 5s; }
 .gallery-slider img:nth-child(3) { animation-delay: 10s; }
 
-/* Hover Effect */
+
 .gallery-card:hover {
   transform: scale(1.05);
   box-shadow: 0 30px 55px rgba(79,95,216,0.25);
 }
 
-/* Pause on hover */
+
 .gallery-card:hover img {
   animation-play-state: paused;
 }
 
-/* =========================
-   FADE ANIMATION (SLOW)
-========================= */
+/* 
+   FADE ANIMATION
+*/
 @keyframes fadeGallery {
   0% { opacity: 0; }
   10% { opacity: 1; }
@@ -147,9 +143,9 @@
   100% { opacity: 0; }
 }
 
-/* =========================
+/*
    TEAM SECTION
-========================= */
+*/
 .team-section {
   padding: 90px 10%;
   background: linear-gradient(180deg, #ffffff, #f6f8ff);
@@ -191,9 +187,9 @@
   margin: 0 auto 18px;
 }
 
-/* =========================
+/* 
    ANIMATIONS
-========================= */
+*/
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-40px); }
   to { opacity: 1; transform: translateY(0); }
@@ -204,9 +200,9 @@
   50% { transform: translateY(-10px); }
 }
 
-/* =========================
+/* 
    RESPONSIVE
-========================= */
+*/
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;
