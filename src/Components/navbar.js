@@ -6,7 +6,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        
         <div className="logo-circle">
           <img src={logo} alt="Nyatpole Logo" />
         </div>
@@ -14,11 +13,21 @@ const Navbar = () => {
       </div>
 
       <ul className="navbar-links">
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About us</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="/career">Career</NavLink></li>
-        <li><NavLink to="/contactS">Contacts</NavLink></li>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About us</NavLink>
+        </li>
+        <li>
+          <NavLink to="/services">Services</NavLink>
+        </li>
+        <li>
+          <NavLink to="/career">Career</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contacts">Contacts</NavLink>
+        </li>
       </ul>
     </nav>
   );
