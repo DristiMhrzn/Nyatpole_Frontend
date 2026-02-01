@@ -8,6 +8,7 @@ import work3 from "../Assets/work3.jpg";
 import work4 from "../Assets/work4.jpg";
 import work5 from "../Assets/work5.jpg";
 import work6 from "../Assets/work6.jpg";
+import lia1 from "../Assets/a.jpg";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -21,7 +22,7 @@ const AboutUs = () => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     cards.forEach((card) => observer.observe(card));
@@ -30,7 +31,6 @@ const AboutUs = () => {
 
   return (
     <div className="about-page">
-
       {/* HERO SECTION */}
       <section className="about-hero">
         <h1>About Nyatpole</h1>
@@ -64,7 +64,6 @@ const AboutUs = () => {
         <h2>Learning in Action</h2>
 
         <div className="gallery-grid">
-
           {/* Card 1 */}
           <div className="gallery-card">
             <div className="gallery-slider">
@@ -100,7 +99,6 @@ const AboutUs = () => {
               <img src={work6} alt="Activity 12" />
             </div>
           </div>
-
         </div>
       </section>
 
@@ -128,17 +126,7 @@ const AboutUs = () => {
             <p className="team-role">HR & Finance</p>
           </div>
         </div>
-
-        <h3 className="sub-title">R&D Team</h3>
-        <div className="team-grid">
-          <div className="team-card"><div className="avatar"></div><h4 className="team-name">Sakshyam Joshi</h4></div>
-          <div className="team-card"><div className="avatar"></div><h4 className="team-name">Abiral Chaudhary</h4></div>
-          <div className="team-card"><div className="avatar"></div><h4 className="team-name">Diwas Regmi</h4></div>
-          <div className="team-card"><div className="avatar"></div><h4 className="team-name">Kritika Panta</h4></div>
-          <div className="team-card"><div className="avatar"></div><h4 className="team-name">Dristi Maharjan</h4></div>
-        </div>
       </section>
-
     </div>
   );
 };
