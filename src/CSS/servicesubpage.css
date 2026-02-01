@@ -2,7 +2,7 @@
    PAGE CONTAINER
 ========================= */
 .services-page {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #f0f4f8;
   padding: 80px 20px;
   color: #333;
@@ -29,34 +29,45 @@
   font-weight: 500;
 }
 
+.services-header-desc {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
 /* =========================
    MAIN SERVICE SECTION
 ========================= */
 .service-section {
-  display: flex;
+  /* display: flex; */
   gap: 50px;
   background: #ffffff;
   padding: 60px 50px;
   margin-bottom: 80px;
   border-radius: 30px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-  min-height: 500px;
+  min-height: auto;
   align-items: center;
   justify-content: center;
   scroll-margin-top: 120px;
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
 }
 
 /* IMAGE */
 .service-section img {
-  width: 450px; 
+  width: 450px;
   height: 450px;
   object-fit: cover;
   border-radius: 24px;
   flex-shrink: 0;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  margin-bottom: 500px;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  /* margin-bottom: 500px; */
 }
 
 .service-section img:hover {
@@ -104,7 +115,9 @@
   font-weight: 600;
   font-size: 1.15rem;
   margin-top: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .service-content .btn:hover {
@@ -117,30 +130,31 @@
 */
 .service-highlights {
   display: flex;
-  justify-content: center; 
-  gap: 40px;              
-  margin-top: 100px;       
-  flex-wrap: nowrap;       
-  width: auto; 
-  padding-left: 500px;             
-  padding: 0 20px;         
+  justify-content: center;
+  gap: 40px;
+  /* margin-top: 100px; */
+  flex-wrap: wrap;
+  width: auto;
+  /* padding-left: 500px; */
+  /* padding: 0 20px; */
 }
 
 .highlight-card {
-  flex: 0 0 auto;           
-  width: 300px;             
+  flex: 0 0 auto;
+  width: 300px;
   background: #ffffff;
   border-radius: 5px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
   padding: 30px 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .highlight-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
 }
 
 .highlight-image {
