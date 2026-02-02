@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { toast } from "react-toastify";
 import "../CSS/contacts.css";
+import Loader from "../Components/loader";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -8,20 +10,52 @@ const Contacts = () => {
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
+  // const [status, setStatus] = useState({ type: "", message: "" });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Thank you, ${formData.name}! Your enquiry has been sent.`);
-    // You can later integrate with backend or email service
+    setLoading(true);
+    // setStatus({ type: "", message: "" });
+    try {
+      const response = await fetch(
+        "https://mailing.resensefy.com/nyatpole/contact-redirect",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to send enquiry");
+      }
+
+      toast.success("Application submitted successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
     <div className="contact-page">
+      {loading && <Loader />}
       {/* Header Section */}
       <div className="contact-header">
         <h1>Contact Us</h1>
@@ -44,6 +78,11 @@ const Contacts = () => {
       {/* Enquiry Form Section */}
       <div className="contact-form-container">
         <h2>Send Us an Enquiry</h2>
+
+        {/* {status.message && (
+          <p className={`form-status ${status.type}`}>{status.message}</p>
+        )} */}
+
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -77,7 +116,9 @@ const Contacts = () => {
             rows="5"
             required
           ></textarea>
-          <button type="submit">Submit Enquiry</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Sending.." : "Submit Enquiry"}
+          </button>
         </form>
       </div>
     </div>
