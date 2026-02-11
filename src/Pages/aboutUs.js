@@ -8,7 +8,15 @@ import work3 from "../Assets/work3.jpg";
 import work4 from "../Assets/work4.jpg";
 import work5 from "../Assets/work5.jpg";
 import work6 from "../Assets/work6.jpg";
-import lia1 from "../Assets/a.jpg";
+
+import lia1 from "../Assets/Nyat-Pole Photos/About us/Learning in action/a.jpg";
+import lia2 from "../Assets/Nyat-Pole Photos/About us/Learning in action/b.jpg";
+import lia3 from "../Assets/Nyat-Pole Photos/About us/Learning in action/cc.jpg";
+import lia4 from "../Assets/Nyat-Pole Photos/About us/Learning in action/dd.jpg";
+import lia5 from "../Assets/Nyat-Pole Photos/About us/Learning in action/ee.jpg";
+import lia6 from "../Assets/Nyat-Pole Photos/About us/Learning in action/ff.jpg";
+import lia7 from "../Assets/Nyat-Pole Photos/About us/Learning in action/gg.jpg";
+import lia8 from "../Assets/Nyat-Pole Photos/About us/Learning in action/hh.jpg";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -70,6 +78,8 @@ const AboutUs = () => {
               <img src={work1} alt="Activity 1" />
               <img src={work2} alt="Activity 2" />
               <img src={work3} alt="Activity 3" />
+              <img src={lia1} alt="Activity 4" />
+              <img src={lia2} alt="Activity 5" />
             </div>
           </div>
 
@@ -79,6 +89,8 @@ const AboutUs = () => {
               <img src={work4} alt="Activity 4" />
               <img src={work5} alt="Activity 5" />
               <img src={work6} alt="Activity 6" />
+              <img src={lia3} alt="Activity 7" />
+              <img src={lia4} alt="Activity 8" />
             </div>
           </div>
 
@@ -88,6 +100,8 @@ const AboutUs = () => {
               <img src={work1} alt="Activity 7" />
               <img src={work2} alt="Activity 8" />
               <img src={work3} alt="Activity 9" />
+              <img src={lia5} alt="Activity 10" />
+              <img src={lia6} alt="Activity 11" />
             </div>
           </div>
 
@@ -97,6 +111,8 @@ const AboutUs = () => {
               <img src={work4} alt="Activity 10" />
               <img src={work5} alt="Activity 11" />
               <img src={work6} alt="Activity 12" />
+              <img src={lia7} alt="Activity 13" />
+              <img src={lia8} alt="Activity 14" />
             </div>
           </div>
         </div>
