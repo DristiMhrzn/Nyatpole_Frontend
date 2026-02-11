@@ -12,12 +12,14 @@ const Landing = () => {
 
   return (
     <div className="landing-container">
-
       {/* HERO / WELCOME SECTION */}
       <div className="hero-section">
         <div className="hero-text">
           <h1>Welcome to Nyat-pole</h1>
-          <p>Shaping future innovators through hands-on STEM and technology learning.</p>
+          <p>
+            Shaping future innovators through hands-on STEM and technology
+            learning.
+          </p>
           <button className="get-started-btn" onClick={handleGetStarted}>
             Get Started
           </button>
@@ -38,7 +40,6 @@ const Landing = () => {
       </div>
 
       <div className="blank"></div>
-
     </div>
   );
 };
