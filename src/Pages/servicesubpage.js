@@ -3,9 +3,29 @@ import { useLocation } from "react-router-dom";
 import "../CSS/servicesubpage.css";
 
 import stemImage from "../Assets/STEM-Education.jpeg";
-import exibitionImage from "../Assets/exibition.jpg";
+import exibitionImage from "../Assets/Nyat-Pole Photos/Services/Stem_Exhibition-camp/exh.jpg";
 import roboticsImage from "../Assets/robotics.jpg";
 import kitsImage from "../Assets/kits.png";
+
+import stem1 from "../Assets/Nyat-Pole Photos/Services/First_services_box_Stem_education_program/Age_appropriate_stem_program.png";
+import stem2 from "../Assets/Nyat-Pole Photos/Services/First_services_box_Stem_education_program/Hands_on_Experiment_and_Demonstration.jpeg";
+import stem3 from "../Assets/Nyat-Pole Photos/Services/First_services_box_Stem_education_program/Programs_for_schools_colleges_learning_centers.jpg";
+import stem4 from "../Assets/Nyat-Pole Photos/Services/First_services_box_Stem_education_program/Project-based_and_inquiry-driven_learning.png";
+
+import stemexh1 from "../Assets/Nyat-Pole Photos/Services/Second_inside_Exibhition-camp/Hands_on_Experiment_and_Demonstration.jpeg";
+import stemexh2 from "../Assets/Nyat-Pole Photos/Services/Second_inside_Exibhition-camp/Innovation_holiday_camps.jpg";
+import stemexh3 from "../Assets/Nyat-Pole Photos/Services/Second_inside_Exibhition-camp/Live_project_demonstrations.jpg";
+import stemexh4 from "../Assets/Nyat-Pole Photos/Services/Second_inside_Exibhition-camp/STEM_robotics_exhibitions.jpg";
+
+import robokit1 from "../Assets/Nyat-Pole Photos/Services/Stem-robotics_kits/Beginner_to_advanced_level_kits.png";
+import robokit2 from "../Assets/Nyat-Pole Photos/Services/Stem-robotics_kits/STEM_robotics_combo_kits.png";
+import roboikt3 from "../Assets/Nyat-Pole Photos/Services/Stem-robotics_kits/Clear_manuals_guided_projects.png";
+import robokit4 from "../Assets/Nyat-Pole Photos/Services/Stem-robotics_kits/Suitable_for_schools_individuals.png";
+
+import robolab1 from "../Assets/Nyat-Pole Photos/Services/Stem-robotics_lab_setup_and_training/Robotics_Lab_Design_and_Installation.jpg";
+import robolab2 from "../Assets/Nyat-Pole Photos/Services/Stem-robotics_lab_setup_and_training/Arduino_and_sensor_based_projects.jpg";
+import robolab3 from "../Assets/Nyat-Pole Photos/Services/Stem-robotics_lab_setup_and_training/Students_and_Teacher_Training.jpg";
+import robolab4 from "../Assets/Nyat-Pole Photos/Services/Stem-robotics_lab_setup_and_training/Competition_and_project_support.jpg";
 
 const ServiceSubPage = () => {
   const location = useLocation();
@@ -35,8 +55,10 @@ const ServiceSubPage = () => {
     <div className="service-highlights">
       {highlights.map((item, index) => (
         <div key={index} className="highlight-card">
-          <div className="highlight-image"></div>
-          <p>{item}</p>
+          <div className="highlight-image">
+            <img src={item.image} alt={item.title} />
+          </div>
+          <p>{item.title}</p>
         </div>
       ))}
     </div>
@@ -64,10 +86,13 @@ const ServiceSubPage = () => {
           </div>
         </div>
         {renderHighlights([
-          "Age-appropriate STEM curriculum",
-          "Hands-on experiments & demonstrations",
-          "Project-based and inquiry-driven learning",
-          "Programs for schools, colleges & learning centers",
+          { title: "Age-appropriate STEM curriculum", image: stem1 },
+          { title: "Hands-on experiments & demonstrations", image: stem2 },
+          {
+            title: "Programs for schools, colleges & learning centers",
+            image: stem4,
+          },
+          { title: "Project-based and inquiry-driven learning", image: stem3 },
         ])}
       </section>
 
@@ -89,10 +114,10 @@ const ServiceSubPage = () => {
           </div>
         </div>
         {renderHighlights([
-          "STEM & robotics exhibitions",
-          "Innovation & holiday camps",
-          "Interactive hands-on workshops",
-          "Live project demonstrations",
+          { title: "STEM & robotics exhibitions", image: stemexh4 },
+          { title: "Innovation & holiday camps", image: stemexh2 },
+          { title: "Interactive hands-on workshops", image: stemexh1 },
+          { title: "Live project demonstrations", image: stemexh3 },
         ])}
       </section>
 
@@ -114,10 +139,10 @@ const ServiceSubPage = () => {
           </div>
         </div>
         {renderHighlights([
-          "Robotics lab design & installation",
-          "Arduino & sensor-based projects",
-          "Student and teacher training",
-          "Competition & project support",
+          { title: "Robotics lab design & installation", image: robolab1 },
+          { title: "Arduino & sensor-based projects", image: robolab2 },
+          { title: "Student and teacher training", image: robolab3 },
+          { title: "Competition & project support", image: robolab4 },
         ])}
       </section>
 
@@ -139,10 +164,10 @@ const ServiceSubPage = () => {
           </div>
         </div>
         {renderHighlights([
-          "Beginner to advanced level kits",
-          "STEM & robotics combo kits",
-          "Clear manuals & guided projects",
-          "Suitable for schools & individuals",
+          { title: "Beginner to advanced level kits", image: robokit1 },
+          { title: "STEM & robotics combo kits", image: robokit2 },
+          { title: "Clear manuals & guided projects", image: roboikt3 },
+          { title: "Suitable for schools & individuals", image: robokit4 },
         ])}
       </section>
     </div>
