@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../CSS/services.css";
 
 import stemImage from "../Assets/STEM-Education.jpeg";
-import exibitionImage from "../Assets/exibition.jpg";
+import exibitionImage from "../Assets/Nyat-Pole Photos/Services/Stem_Exhibition-camp/exh.jpg";
 import roboticsImage from "../Assets/robotics.jpg";
 import kitsImage from "../Assets/kits.png";
 
