@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom"; // <-- import useNavigate
 import "../CSS/landing.css";
 import roboImage from "../Assets/robo.png";
 
+import img1 from "../Assets/Nyat-Pole Photos/Home_Page/1.png";
+import img2 from "../Assets/Nyat-Pole Photos/Home_Page/2.jpg";
+import img3 from "../Assets/Nyat-Pole Photos/Home_Page/3.png";
+import img4 from "../Assets/Nyat-Pole Photos/Home_Page/4.png";
+
 const Landing = () => {
   const navigate = useNavigate(); // <-- create navigate function
 
@@ -33,10 +38,18 @@ const Landing = () => {
 
       {/* IMAGE SHOWCASE SECTION */}
       <div className="landing-images">
-        <div className="landing-image-card image1"></div>
-        <div className="landing-image-card image2"></div>
-        <div className="landing-image-card image3"></div>
-        <div className="landing-image-card image4"></div>
+        <div className="landing-image-card ">
+          <img src={img1} alt="" />
+        </div>
+        <div className="landing-image-card image2">
+          <img src={img2} alt="" />
+        </div>
+        <div className="landing-image-card ">
+          <img src={img3} alt="" />
+        </div>
+        <div className="landing-image-card ">
+          <img src={img4} alt="" />
+        </div>
       </div>
 
       <div className="blank"></div>

@@ -6,8 +6,32 @@
 /*
    GLOBAL LANDING STYLES
  */
+
+/* GLOBAL RESET — add at the very top of landing.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .landing-container {
   min-height: 100vh;
+  width: 100%;
   background: linear-gradient(135deg, #e0e6fa, #c6d2ff);
   display: flex;
   flex-direction: column;
@@ -131,15 +155,26 @@
   gap: 25px;
   padding: 60px 8%;
   background-color: #fff6e5;
+  align-items: stretch;
 }
 
 .landing-image-card {
-  height: 350px;
+  /* height: 400px; fixed equal height */
   border-radius: 20px;
-  background-size: cover;
+  /* overflow: hidden; prevents overflow */
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
   transition: transform 0.4s ease;
+}
+
+.landing-image-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 .landing-image-card:hover {
@@ -151,9 +186,6 @@
 */
 .image1 {
   background-image: url("../Assets/Nyat-Pole Photos/Home_Page/1.png");
-}
-.image2 {
-  background-image: url("../Assets/Nyat-Pole Photos/Home_Page/2.jpg");
 }
 .image3 {
   background-image: url("../Assets/Nyat-Pole Photos/Home_Page/3.png");
