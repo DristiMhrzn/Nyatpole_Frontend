@@ -18,6 +18,8 @@ import lia6 from "../Assets/Nyat-Pole Photos/About us/Learning in action/ff.jpg"
 import lia7 from "../Assets/Nyat-Pole Photos/About us/Learning in action/gg.jpg";
 import lia8 from "../Assets/Nyat-Pole Photos/About us/Learning in action/hh.jpg";
 
+import img1 from "../Assets/Nyat-Pole Photos/About us/whoweare.jpg";
+
 const AboutUs = () => {
   useEffect(() => {
     const cards = document.querySelectorAll(".gallery-card, .team-card");
@@ -63,7 +65,7 @@ const AboutUs = () => {
         </div>
 
         <div className="image-placeholder">
-          <span>Future Image Space</span>
+          <img src={img1} alt="Who We Are" />
         </div>
       </section>
 
