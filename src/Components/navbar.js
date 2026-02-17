@@ -12,7 +12,9 @@ const Navbar = () => {
         <div className="logo-circle">
           <img src={logo} alt="Nyatpole Logo" />
         </div>
-        <span>NYAT-POLE</span>
+        <NavLink to="/" className="navbar-name">
+          श्री न्यातपोल एडटेक प्रा. लि.
+        </NavLink>
       </div>
 
       {/* Hamburger */}
