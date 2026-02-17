@@ -7,8 +7,7 @@ const Footer = () => {
         <strong>Location:</strong> Mid-Baneshwor
       </p>
       <p>
-        <strong>Contact us:</strong> +977-9767287295 | +977-9818313199 |
-        +977-9769368545
+        <strong>Contact us:</strong> +977-9712073003
       </p>
       <p>
         <strong>Email:</strong> nyatpole@gmail.com
