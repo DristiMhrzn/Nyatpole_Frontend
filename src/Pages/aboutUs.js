@@ -134,14 +134,17 @@ const AboutUs = () => {
 
           <div className="team-card">
             <div className="avatar"></div>
-            <h4 className="team-name">Karan Das</h4>
-            <p className="team-role">Managing Director</p>
-          </div>
-
-          <div className="team-card">
-            <div className="avatar"></div>
             <h4 className="team-name">Dipika Ghimire</h4>
             <p className="team-role">HR & Finance</p>
+          </div>
+        </div>
+
+        <h3 className="sub-title">STEM Engineer</h3>
+        <div className="team-grid">
+          <div className="team-card">
+            <div className="avatar"></div>
+            <h4 className="team-name">TEST</h4>
+            <p className="team-role">STEM Engineer</p>
           </div>
         </div>
       </section>
