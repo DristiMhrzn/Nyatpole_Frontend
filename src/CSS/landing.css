@@ -29,6 +29,53 @@ body {
   overflow-x: hidden;
 }
 
+.blank {
+  margin: 80px 0;
+  padding: 60px 20px;
+  text-align: center;
+
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: #5f72bd;
+
+  position: relative;
+
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+.blank::before,
+.blank::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #5f72bd);
+}
+
+.blank::before {
+  left: 5%;
+}
+
+.blank::after {
+  right: 5%;
+  transform: rotate(180deg);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .landing-container {
   min-height: 100vh;
   width: 100%;

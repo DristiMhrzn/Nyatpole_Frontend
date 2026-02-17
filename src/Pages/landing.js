@@ -52,7 +52,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="blank"></div>
+      <div className="blank">Elegance in action</div>
     </div>
   );
 };
