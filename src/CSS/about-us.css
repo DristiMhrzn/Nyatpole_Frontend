@@ -175,6 +175,21 @@
   text-align: center;
 }
 
+.exec-image-wrapper {
+  text-align: center;
+}
+
+.image-exec {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  height: 320px;
+  margin: 30px auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
 .team-title {
   font-size: 3rem;
 }
@@ -205,9 +220,11 @@
 .avatar {
   width: 95px;
   height: 95px;
-  background: linear-gradient(135deg, #91a1dd, #6571cd);
   border-radius: 50%;
+  object-fit: cover; /* crops image nicely inside circle */
+  display: block;
   margin: 0 auto 18px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* 

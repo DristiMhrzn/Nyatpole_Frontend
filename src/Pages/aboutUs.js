@@ -20,6 +20,11 @@ import lia8 from "../Assets/Nyat-Pole Photos/About us/Learning in action/hh.jpg"
 
 import img1 from "../Assets/Nyat-Pole Photos/About us/whoweare.jpg";
 
+import exec1 from "../Assets/exec.jpg";
+import stem1 from "../Assets/stem1.jpg";
+import stem2 from "../Assets/stem2.jpg";
+import stem3 from "../Assets/stem3.jpg";
+
 const AboutUs = () => {
   useEffect(() => {
     const cards = document.querySelectorAll(".gallery-card, .team-card");
@@ -125,15 +130,16 @@ const AboutUs = () => {
         <h2 className="team-title">Our Team</h2>
 
         <h3 className="sub-title">Executive Team</h3>
+        <div className="exec-image-wrapper">
+          <img className="image-exec" src={exec1} alt="Executive Team" />
+        </div>
         <div className="team-grid">
           <div className="team-card">
-            <div className="avatar"></div>
             <h4 className="team-name">Kushal Raj Shiwakoti</h4>
             <p className="team-role">CEO</p>
           </div>
 
           <div className="team-card">
-            <div className="avatar"></div>
             <h4 className="team-name">Dipika Ghimire</h4>
             <p className="team-role">HR & Finance</p>
           </div>
@@ -142,8 +148,20 @@ const AboutUs = () => {
         <h3 className="sub-title">STEM Engineer</h3>
         <div className="team-grid">
           <div className="team-card">
-            <div className="avatar"></div>
-            <h4 className="team-name">TEST</h4>
+            <img className="avatar" src={stem1} alt="STEM Engineer" />
+            <h4 className="team-name">Mausam Thakali</h4>
+            <p className="team-role">STEM Engineer</p>
+          </div>
+
+          <div className="team-card">
+            <img className="avatar" src={stem2} alt="STEM Engineer" />
+            <h4 className="team-name">Bobby Tamang</h4>
+            <p className="team-role">STEM Engineer</p>
+          </div>
+
+          <div className="team-card">
+            <img className="avatar" src={stem3} alt="STEM Engineer" />
+            <h4 className="team-name">Milan Rokaya</h4>
             <p className="team-role">STEM Engineer</p>
           </div>
         </div>
