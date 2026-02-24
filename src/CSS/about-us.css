@@ -63,22 +63,20 @@
 
 /* IMAGE PLACEHOLDER */
 .image-placeholder {
-  height: 450px;
-  background: linear-gradient(145deg, #e4e9ff, #f7f9ff);
+  aspect-ratio: 4 / 3;
+  width: 100%;
   border-radius: 28px;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
   color: #4f5fd8;
   animation: bounce 4s ease-in-out infinite;
 }
 
 .image-placeholder img {
-  height: 450px;
+  height: 100%;
   width: 100%;
-  background: linear-gradient(145deg, #e4e9ff, #f7f9ff);
+  object-fit: cover;
+  display: block;
   border-radius: 28px;
-  justify-content: center;
-  align-items: center;
   animation: bounce 4s ease-in-out infinite;
 }
 
@@ -218,13 +216,15 @@
 }
 
 .avatar {
-  width: 95px;
-  height: 95px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  object-fit: cover; /* crops image nicely inside circle */
+  object-fit: cover;
   display: block;
   margin: 0 auto 18px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+
+  border: 4px solid white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 /* 
