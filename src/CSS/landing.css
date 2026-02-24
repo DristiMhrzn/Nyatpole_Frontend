@@ -30,18 +30,17 @@ body {
 }
 
 .blank {
-  margin: 80px 0;
-  padding: 60px 20px;
+  margin: 60px 0;
+  padding: 40px 16px;
   text-align: center;
 
-  font-size: 34px;
+  font-size: clamp(20px, 5vw, 34px); /* Responsive font */
   font-weight: 600;
   letter-spacing: 1px;
 
   color: #5f72bd;
 
   position: relative;
-
   animation: fadeUp 1s ease forwards;
   opacity: 0;
 }
@@ -51,17 +50,17 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  width: 30%;
+  width: 22%; /* smaller so it fits mobile */
   height: 2px;
   background: linear-gradient(to right, transparent, #5f72bd);
 }
 
 .blank::before {
-  left: 5%;
+  left: 0;
 }
 
 .blank::after {
-  right: 5%;
+  right: 0;
   transform: rotate(180deg);
 }
 
